@@ -57,6 +57,9 @@ $nsgRuleDestinationPortRange,
 $csvFilePath = "C:\CIBIN\CLOUD-APAC\Automation-Script\trail.csv"
 )
 
+# sign in
+Write-Host "Logging in...";
+Connect-AzAccount;
 
 # select subscription
 Write-Host "Selecting subscription '$SubscriptionName'";
